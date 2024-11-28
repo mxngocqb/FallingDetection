@@ -68,21 +68,4 @@ To use the projects, follow these steps:
    - **Python Integration**: Update your Python script to replace the placeholder IP address with the ESP32's actual IP address to ensure communication.
 
 
-## Credits
 
-This project was developed by a dedicated team focused on creating an effective real-time fall detection system using the latest technologies in edge computing, computer vision, and IoT. Each member contributed significantly to the success of the project.
-
-### Team Members:
-- **[Tôn Long Thuật](https://github.com/tonlongthuat)**: Project Lead, directing technical strategy, configuring and integrating the ESP32-CAM, refining the fall detection algorithm, developing Python code for real-time data processing, ensuring cross-functional alignment, and delivering high-quality, timely outcomes.
-- **[Nguyễn Việt Quang](https://github.com/ngvietquang)**: Web Developer, Responsible for developing the web interface for managing the camera systems, ensuring seamless integration and user-friendly interaction for real-time monitoring.
-- **[Lê Quang Toàn](https://github.com/letoannn)**: Data Analyst – responsible for collecting and analyzing essential data throughout the project development process, providing insights that inform decision-making and improve system performance.
-
-
-Special thanks to the open-source community for providing valuable resources such as the YOLO model and other essential Python libraries used in this project.
-
-This project would not have been possible without the collective efforts of the entire team.
-### ⭐ Support This Project
-
-If you find this project useful or interesting, please consider giving it a star! Your support helps improve visibility and encourages further development.
-
-Thank you for your interest!
