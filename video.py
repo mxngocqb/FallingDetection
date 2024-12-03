@@ -11,8 +11,8 @@ class VideoProcessor:
         self.should_stop = False
         self.processing_thread = None
         self.total_fall_time = 0
-        self.fall_detected_duration = 2  # seconds
-        self.monitoring_duration = 10  # seconds
+        self.fall_detected_duration = 1  # seconds
+        self.monitoring_duration = 5  # seconds
         self.start_time = time.time()
         self.last_detection_time = None
 
@@ -102,6 +102,7 @@ class VideoStreamer:
         self.start()
         try:
             while True:
+                time.sleep(0.2)
                 frame = self.esp32_cam.get_frame()
                 if frame is not None:
                     processed_frame = self.video_processor.process_frame(frame)
