@@ -2,6 +2,7 @@ import cv2
 import time
 from threading import Thread
 from ultralytics import YOLO
+from mail import SMTPClient
 
 class VideoProcessor:
     def __init__(self, model_path, frame_queue, confidence_threshold=0.5):
@@ -15,6 +16,13 @@ class VideoProcessor:
         self.monitoring_duration = 5  # seconds
         self.start_time = time.time()
         self.last_detection_time = None
+        self.mail = SMTPClient(
+            smtp_server="smtp.gmail.com",
+            smtp_port=587,
+            username="mxn111333@gmail.com",
+            password="pehd xihq rccb iyvv",
+        )
+        self.mail_send = 0
 
     def process_frame(self, frame):
         results = self.model(frame)
@@ -50,6 +58,30 @@ class VideoProcessor:
         if self.total_fall_time >= self.fall_detected_duration:
             cv2.putText(frame, "FALL DETECTED", (50, 50), 
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+            
+            # List of email recipients
+            recipient_emails = [
+                "baotrung02062008@gmail.com",
+                "namntqwer@gmail.com",
+            ]
+
+            # Convert frame to image file (PNG format)
+            _, buffer = cv2.imencode('.png', frame)
+            image_data = buffer.tobytes()
+
+            if self.mail_send == 0:# Attach image to email and send
+                self.mail.send_email_to_list_with_attachment(
+                    from_email="mxn111333@gmail.com",
+                    to_emails=recipient_emails,
+                    subject="Phát hiện người ngã",
+                    body="Hệ thống đã phát hiện người ngã trong phòng. Đính kèm là hình ảnh ghi lại.",
+                    attachment=image_data,
+                    attachment_filename="fall_detected.png"
+                )
+
+                self.mail_send = 1
+        else:
+            self.mail_send = 0
 
         # Reset total fall time and start time if monitoring duration has passed
         if time.time() - self.start_time >= self.monitoring_duration:

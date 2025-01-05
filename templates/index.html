@@ -11,7 +11,7 @@
   <style>
     body {
       width: 100%;
-      background-color: #cdf3f1;
+      background-color: #ffffff;
       font-family: 'Crimson Pro', serif;
     }
 
@@ -135,209 +135,218 @@
       </div>
     </form>
 
-    <div id="video-container2">
-      <form id="upload-form-2" enctype="multipart/form-data">
-        <div class="image-container">
-          <i id="icon_cam" class="fa-solid fa-camera"></i>
-          <img id="video-preview-2" class="Cam"
-            src="https://th.bing.com/th?q=No+Camera+Icon+White+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=strict&t=1&mw=247"
-            alt="Camera 2" />
-          <button type="button" class="overlay-button" data-index="2" onclick="toggleDropdown(2)">
-            &#x22EE;
-          </button>
+    <form id="upload-form-2" enctype="multipart/form-data">
+      <div class="image-container">
+        <i id="icon_cam" class="fa-solid fa-camera"></i>
+        <img id="video-preview-2" class="Cam"
+          src="https://th.bing.com/th?q=No+Camera+Icon+White+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=strict&t=1&mw=247"
+          alt="Camera 2" />
+        <button type="button" class="overlay-button" data-index="2" onclick="toggleDropdown(2)">
+          &#x22EE;
+        </button>
 
-          <div id="dropdownMenu2" class="dropdown">
-            <label class="dropdown-item" for="file-input-2">
-              Choose File
-              <input id="file-input-2" style="display: none" type="file" name="file" accept="video/*"
-                onchange="previewVideo(event, 2)" required />
-            </label>
-            <div class="dropdown-item" onclick="chooseIpCam(2)">
-              Choose IP Cam
-            </div>
-            <div class="dropdown-item" onclick="closeCamera(2)">Close Cam</div>
+        <div id="dropdownMenu2" class="dropdown">
+          <label class="dropdown-item" for="file-input-2">
+            Choose File
+            <input id="file-input-2" style="display: none" type="file" name="file" accept="video/*"
+              onchange="previewVideo(event, 2)" required />
+          </label>
+          <div class="dropdown-item" onclick="chooseIpCam(2)">
+            Choose IP Cam
           </div>
+          <div class="dropdown-item" onclick="closeCamera(2)">Close Cam</div>
         </div>
-      </form>
-
-      <div id="video-container3">
-        <form id="upload-form-3" enctype="multipart/form-data">
-          <div class="image-container">
-            <i id="icon_cam" class="fa-solid fa-camera"></i>
-            <img id="video-preview-3" class="Cam"
-              src="https://th.bing.com/th?q=No+Camera+Icon+White+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=strict&t=1&mw=247"
-              alt="Camera 3" />
-            <button type="button" class="overlay-button" data-index="3" onclick="toggleDropdown(3)">
-              &#x22EE;
-            </button>
-
-            <div id="dropdownMenu3" class="dropdown">
-              <label class="dropdown-item" for="file-input-3">
-                Choose File
-                <input id="file-input-3" style="display: none" type="file" name="file" accept="video/*"
-                  onchange="previewVideo(event, 3)" required />
-              </label>
-              <div class="dropdown-item" onclick="chooseIpCam(3)">
-                Choose IP Cam
-              </div>
-              <div class="dropdown-item" onclick="closeCamera(3)">Close Cam</div>
-            </div>
-          </div>
-        </form>
       </div>
+    </form>
+  </div>
 
-      <div id="video-container4">
-        <form id="upload-form-4" enctype="multipart/form-data">
-          <div class="image-container">
-            <i id="icon_cam" class="fa-solid fa-camera"></i>
-            <img id="video-preview-4" class="Cam"
-              src="https://th.bing.com/th?q=No+Camera+Icon+White+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=strict&t=1&mw=247"
-              alt="Camera 4" />
-            <button type="button" class="overlay-button" data-index="4" onclick="toggleDropdown(4)">
-              &#x22EE;
-            </button>
+  <div id="video-container2">
+    <form id="upload-form-3" enctype="multipart/form-data">
+      <div class="image-container">
+        <i id="icon_cam" class="fa-solid fa-camera"></i>
+        <img id="video-preview-3" class="Cam"
+          src="https://th.bing.com/th?q=No+Camera+Icon+White+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=strict&t=1&mw=247"
+          alt="Camera 3" />
+        <button type="button" class="overlay-button" data-index="3" onclick="toggleDropdown(3)">
+          &#x22EE;
+        </button>
 
-            <div id="dropdownMenu4" class="dropdown">
-              <label class="dropdown-item" for="file-input-4">
-                Choose File
-                <input id="file-input-4" style="display: none" type="file" name="file" accept="video/*"
-                  onchange="previewVideo(event, 4)" required />
-              </label>
-              <div class="dropdown-item" onclick="chooseIpCam(4)">
-                Choose IP Cam
-              </div>
-              <div class="dropdown-item" onclick="closeCamera(4)">Close Cam</div>
-            </div>
+        <div id="dropdownMenu3" class="dropdown">
+          <label class="dropdown-item" for="file-input-3">
+            Choose File
+            <input id="file-input-3" style="display: none" type="file" name="file" accept="video/*"
+              onchange="previewVideo(event, 3)" required />
+          </label>
+          <div class="dropdown-item" onclick="chooseIpCam(3)">
+            Choose IP Cam
           </div>
-        </form>
+          <div class="dropdown-item" onclick="closeCamera(3)">Close Cam</div>
+        </div>
       </div>
+    </form>
+    <form id="upload-form-4" enctype="multipart/form-data">
+      <div class="image-container">
+        <i id="icon_cam" class="fa-solid fa-camera"></i>
+        <img id="video-preview-4" class="Cam"
+          src="https://th.bing.com/th?q=No+Camera+Icon+White+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=strict&t=1&mw=247"
+          alt="Camera 4" />
+        <button type="button" class="overlay-button" data-index="4" onclick="toggleDropdown(4)">
+          &#x22EE;
+        </button>
 
-      <script>
-        window.onload = function () {
-          // Initial load actions
-          initializePreview();
+        <div id="dropdownMenu4" class="dropdown">
+          <label class="dropdown-item" for="file-input-4">
+            Choose File
+            <input id="file-input-4" style="display: none" type="file" name="file" accept="video/*"
+              onchange="previewVideo(event, 4)" required />
+          </label>
+          <div class="dropdown-item" onclick="chooseIpCam(4)">
+            Choose IP Cam
+          </div>
+          <div class="dropdown-item" onclick="closeCamera(4)">Close Cam</div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <script>
+    window.onload = function () {
+      // Initial load actions
+      initializePreview();
+    }
+
+    async function initializePreview() {
+      const promises = [
+        previewVideo({ target: { files: [null] } }, 2),
+        previewVideo({ target: { files: [null] } }, 1),
+        previewVideo({ target: { files: [null] } }, 3),
+        previewVideo({ target: { files: [null] } }, 4)
+      ];
+
+      // Wait for all the promises to resolve
+      await Promise.all(promises);
+      console.log('All previews initialized');
+    }
+
+
+
+    function toggleDropdown(index) {
+      const dropdown = document.getElementById(`dropdownMenu${index}`);
+      const button = document.querySelector(
+        `.overlay-button[data-index='${index}']`
+      );
+
+      dropdown.classList.toggle("show");
+
+      if (dropdown.classList.contains("show")) {
+        button.style.display = "none";
+      } else {
+        button.style.display = "block";
+      }
+    }
+
+    window.onclick = function (event) {
+      const dropdowns = document.getElementsByClassName("dropdown");
+      for (let i = 0; i < dropdowns.length; i++) {
+        const button = document.querySelector(
+          `.overlay-button[data-index='${i + 1}']`
+        );
+        if (!event.target.matches(".overlay-button") && !event.target.closest('.dropdown')) {
+          dropdowns[i].classList.remove("show");
+          button.style.display = "block";
         }
+      }
+    };
 
-        async function initializePreview() {
-          const promises = [
-            previewVideo({ target: { files: [null] } }, 2),
-            previewVideo({ target: { files: [null] } }, 1),
-            previewVideo({ target: { files: [null] } }, 3),
-            previewVideo({ target: { files: [null] } }, 4)
-          ];
+    function closeCamera(index) {
+      document.getElementById(`video-preview-${index}`).src =
+        "https://th.bing.com/th?q=No+Camera+Icon+White+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=strict&t=1&mw=247"; // Reset to default image
+      const fileInput = document.getElementById(`file-input-${index}`);
+      fileInput.value = "";
+    }
 
-          // Wait for all the promises to resolve
-          await Promise.all(promises);
-          console.log('All previews initialized');
-        }
+    function previewVideo(event, index) {
+      return new Promise((resolve, reject) => {
+        const file = event.target.files[0];
+        const fileInput = document.getElementById(`file-input-${index}`);
 
+        if (file) {
+          // Vô hiệu hóa file input để ngăn người dùng chọn file mới
+          fileInput.disabled = true;
 
+          const url = `/video_feed/${index}`;
+          const formData = new FormData();
+          formData.append('file', file);
+          formData.append('camera_id', index);
 
-        function toggleDropdown(index) {
-          const dropdown = document.getElementById(`dropdownMenu${index}`);
-          const button = document.querySelector(
-            `.overlay-button[data-index='${index}']`
-          );
-
-          dropdown.classList.toggle("show");
-
-          if (dropdown.classList.contains("show")) {
-            button.style.display = "none";
-          } else {
-            button.style.display = "block";
-          }
-        }
-
-        window.onclick = function (event) {
-          const dropdowns = document.getElementsByClassName("dropdown");
-          for (let i = 0; i < dropdowns.length; i++) {
-            const button = document.querySelector(
-              `.overlay-button[data-index='${i + 1}']`
-            );
-            if (!event.target.matches(".overlay-button") && !event.target.closest('.dropdown')) {
-              dropdowns[i].classList.remove("show");
-              button.style.display = "block";
+          $.ajax({
+            url: '/upload',
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+              alert(response.message);
+              document.getElementById(`video-preview-${index}`).src = url;
+              document.getElementById(`video-preview-${index}`).load();
+              fileInput.value = "";
+              fileInput.disabled = false; // Enable input again
+              resolve();  // Resolve the Promise when the video is loaded
+            },
+            error: function (xhr) {
+              alert('Error: ' + xhr.responseJSON.error);
+              console.error('Error:', xhr.responseJSON.error);
+              fileInput.disabled = false; // Enable input even on error
+              reject(xhr.responseJSON.error); // Reject the Promise on error
             }
-          }
-        };
-
-        function closeCamera(index) {
-          document.getElementById(`video-preview-${index}`).src =
-            "https://th.bing.com/th?q=No+Camera+Icon+White+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=strict&t=1&mw=247"; // Reset to default image
-          const fileInput = document.getElementById(`file-input-${index}`);
-          fileInput.value = "";
-        }
-
-        function previewVideo(event, index) {
-          return new Promise((resolve, reject) => {
-            const file = event.target.files[0];
-            const fileInput = document.getElementById(`file-input-${index}`);
-
-            if (file) {
-              // Vô hiệu hóa file input để ngăn người dùng chọn file mới
-              fileInput.disabled = true;
-
-              const url = `/video_feed/${index}`;
-              const formData = new FormData();
-              formData.append('file', file);
-              formData.append('camera_id', index);
-
-              $.ajax({
-                url: '/upload',
-                type: 'POST',
-                data: formData,
-                contentType: false,
-                processData: false,
-                success: function (response) {
-                  alert(response.message);
-                  document.getElementById(`video-preview-${index}`).src = url;
-                  document.getElementById(`video-preview-${index}`).load();
-                  fileInput.value = "";
-                  fileInput.disabled = false; // Enable input again
-                  resolve();  // Resolve the Promise when the video is loaded
-                },
-                error: function (xhr) {
-                  alert('Error: ' + xhr.responseJSON.error);
-                  console.error('Error:', xhr.responseJSON.error);
-                  fileInput.disabled = false; // Enable input even on error
-                  reject(xhr.responseJSON.error); // Reject the Promise on error
-                }
-              });
-            } else {
-              const url = `/video_feed/${index}`;
+          });
+        } else {
+          const url = `/video_feed/${index}`;
+          $.ajax({
+            url: url,
+            type: 'GET',
+            data: { camera_id: index },
+            success: function (response) {
               document.getElementById(`video-preview-${index}`).src = url;
               document.getElementById(`video-preview-${index}`).load();
               resolve();  // Resolve if no file is selected
+            },
+            error: function (xhr) {
+              console.error('Error:', xhr.responseJSON.error);
+              reject(xhr.responseJSON.error); // Reject the Promise on error
             }
           });
         }
+      });
+    }
 
 
-        function chooseIpCam(index) {
-          const ip = prompt("Please enter the IP address of the camera:");
-          if (ip) {
-            console.log(`Camera ${index} IP Address: ${ip}`);
-            document.getElementById(`video-preview-${index}`).src = `/video_feed/${index}`;
-            fetch("/set_ip", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({ camera_id: index, ip: ip }),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                alert(data.message);
-              })
-              .catch((error) => {
-                console.error("Error:", error);
-              });
-          } else {
-            document.getElementById(`video-preview-${index}`).src = `/video_feed/${index}`;
-          }
-        }
+    function chooseIpCam(index) {
+      const ip = prompt("Please enter the IP address of the camera:");
+      if (ip) {
+        console.log(`Camera ${index} IP Address: ${ip}`);
+        document.getElementById(`video-preview-${index}`).src = `/video_feed/${index}`;
+        fetch("/set_ip", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ camera_id: index, ip: ip }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            alert(data.message);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      } else {
+        document.getElementById(`video-preview-${index}`).src = `/video_feed/${index}`;
+      }
+    }
 
-      </script>
+  </script>
 </body>
 
 </html>

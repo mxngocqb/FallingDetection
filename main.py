@@ -4,6 +4,7 @@ import queue
 from flask import Flask, render_template, Response, request, jsonify
 from esp32cam_streamer import ESP32CamStreamer
 from video import VideoProcessor, VideoStreamer, FileVideoStreamer
+from mail import SMTPClient
 
 app = Flask(__name__, template_folder='templates')
 
@@ -116,6 +117,7 @@ def video_feed(camera_id):
 if __name__ == "__main__":
     # Load data before starting the app
     load_data()
-    
+
+
     os.makedirs('uploads', exist_ok=True)
     app.run(host="0.0.0.0", port=5000, debug=True)
